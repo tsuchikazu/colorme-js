@@ -1,10 +1,11 @@
 {
-  "name": "es6-project-boilerplate",
-  "description": "the my thought strongest template for es6 project",
-  "version": "0.0.0",
-  "author": "mohayonao <mohayonao@gmail.com>",
+  "name": "colorme-api-js",
+  "description": "Colorme api client written in JavaScript for browser and node.js",
+  "version": "0.0.1",
+  "author": "tsuchikazu <huneyhunt77@gmail.com>",
   "bugs": {
-    "url": "https://github.com/mohayonao/es6-project-boilerplate/issues"
+    "url": "https://github.com/tsuchikazu/colorme-api-js/issues"
+  },
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,13 +25,13 @@
     "README.md",
     "lib"
   ],
-  "homepage": "https://github.com/mohayonao/es6-project-boilerplate/",
+  "homepage": "https://github.com/tsuchikazu/colorme-api-js/",
   "keywords": [],
   "licenses": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/colormeApi.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mohayonao/es6-project-boilerplate.git"
+    "url": "https://github.com/tsuchikazu/colorme-api-js.git"
   },
   "scripts": {
     "build": "npm run build-to5 && npm run build-browser && npm run build-minify",
