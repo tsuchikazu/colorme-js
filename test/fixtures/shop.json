@@ -1,0 +1,41 @@
+[
+    {
+        "scope": "http://api.shop-pro.jp:80",
+        "method": "get",
+        "path": "/v1/shop.json",
+        "body": "",
+        "status": 200,
+        "response": {
+            "shop": {
+                "id": "PA01131974",
+                "state": "enabled",
+                "domain_plan": "cmsp_sub_domain",
+                "last_login_date": 1425957560,
+                "setup_date": 1302165500,
+                "make_date": 1302165213,
+                "url": "http://grape0.shop-pro.jp",
+                "open_state": "opened",
+                "mobile_open_state": "closed",
+                "login_id": "grape0",
+                "name1": "西谷",
+                "name2": "崇志",
+                "name1_kana": "ニシタニ",
+                "name2_kana": "タカシ",
+                "hojin": "株式会社グレープサテライト",
+                "hojin_kana": "カブシキガイシャグレープサテライト",
+                "user_mail": "info@grapesatellite.co.jp",
+                "tel": "036-658-4071",
+                "fax": null,
+                "postal": "9760154",
+                "pref_id": 7,
+                "pref_name": "福島県",
+                "address1": "相馬市玉野",
+                "address2": null,
+                "title": "西谷商店",
+                "title_short": null,
+                "shop_mail_1": "tsuchikazu@paperboy.co.jp",
+                "shop_mail_2": null
+            }
+        }
+    }
+]

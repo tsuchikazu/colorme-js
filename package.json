@@ -6,8 +6,9 @@
   "bugs": {
     "url": "https://github.com/tsuchikazu/colorme-api-js/issues"
   },
+  "dependencies": {
+    "axios": "^0.5.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel": "^4.3.0",
     "babelify": "^5.0.3",
@@ -17,6 +18,7 @@
     "jshint": "^2.6.0",
     "jshint-stylish": "^1.0.0",
     "mocha": "^2.1.0",
+    "nock": "^0.59.1",
     "power-assert": "^0.10.2",
     "uglify-js": "^2.4.16"
   },
@@ -41,6 +43,7 @@
     "cover": "babel-node node_modules/.bin/isparta cover --report text --report html node_modules/.bin/_mocha",
     "lint": "jshint src test --reporter node_modules/jshint-stylish/stylish.js",
     "test": "mocha",
+    "test-watch": "mocha --watch",
     "travis": "npm run lint && npm run test"
   }
 }
