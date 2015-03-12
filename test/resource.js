@@ -67,6 +67,41 @@ describe('Resource', () => {
         done();
       });
     })
+
+    it("should send request to nested resource path", (done) => {
+      let request = nock(baseUrl).get('/resource/nestedResource').reply(200);
+
+      let resource = new Resource({
+        name: 'resource',
+        resources: [new Resource({
+          name: 'nestedResource',
+          methods: [Resource.GET],
+        })]
+      });
+      resource.nestedResource.get().then(() => {
+        request.done();
+        done();
+      });
+    })
+
+    it("should send request to nested nested resource path", (done) => {
+      let request = nock(baseUrl).get('/resource/nestedResource/nestedNestedResource').reply(200);
+
+      let resource = new Resource({
+        name: 'resource',
+        resources: [new Resource({
+          name: 'nestedResource',
+          resources: [new Resource({
+            name: 'nestedNestedResource',
+            methods: [Resource.GET]
+          })]
+        })]
+      });
+      resource.nestedResource.nestedNestedResource.get().then(() => {
+        request.done();
+        done();
+      });
+    })
   })
 
   describe('#get', () => {

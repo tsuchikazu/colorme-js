@@ -12,8 +12,13 @@ class Resource {
   static set urlSuffix(value) { this._urlSuffix = value; }
   static get urlSuffix() { return this._urlSuffix; }
 
-  constructor({name, methods}) {
+  constructor({name, methods, resources}) {
     this.name = name;
+    resources = resources || [];
+    resources.forEach(resource => {
+      resource.parentResource = this;
+      this[resource.name] = resource;
+    })
     methods = methods || [];
     methods.forEach(method => {
       this[method] = this.buildMethod(method);
@@ -23,7 +28,8 @@ class Resource {
   buildMethod(method) {
     return (params) => {
       params = params || {}
-      let url = `${Resource.baseUrl}/${this.name}`;
+      let parentResourceNames = this.parentNames().reverse();
+      let url = [Resource.baseUrl].concat(parentResourceNames).concat(this.name).join('/');
       if (params.id) {
         url += `/${params.id}`;
         delete params.id;
@@ -48,6 +54,14 @@ class Resource {
       }
       return axios(config)
     }
+  }
+
+  parentNames(names = []) {
+    if (this.parentResource) {
+      names.push(this.parentResource.name);
+      return this.parentResource.parentNames(names);
+    }
+    return names;
   }
 }
 export default Resource;
