@@ -13,12 +13,11 @@ describe("ColormeApi", () => {
     nockBack.setMode('record');
 
     colormeApi = new ColormeApi({token: "token"})
-
   });
 
 
-  describe("shop.get()", () => {
-    it("should return shop", done => {
+  describe("#shop.get()", () => {
+    it("should request 'GET /v1/shop.json'", done => {
       nockBack('shop.json', nockDone => {
         colormeApi.shop.get().then(({shop}) => {
           assert(shop.id == "PA01131974");
@@ -31,8 +30,8 @@ describe("ColormeApi", () => {
     })
   })
 
-  describe("products.get()", () => {
-    it("should return products", done => {
+  describe("#products.get()", () => {
+    it("should request 'GET /v1/products.json'", done => {
       nockBack('products.json', nockDone => {
         colormeApi.products.get().then(({products, meta}) => {
           assert(products[0].id == 86927961);
@@ -48,8 +47,8 @@ describe("ColormeApi", () => {
     })
   })
 
-  describe("products.get({id: id})", () => {
-    it("should return product", done => {
+  describe("#products.get({id: id})", () => {
+    it("should request 'GET /v1/products/#{id}.json'", done => {
       nockBack('product.json', nockDone => {
         var productId = 66768641;
         colormeApi.products.get({id: productId}).then(({product}) => {
@@ -63,8 +62,8 @@ describe("ColormeApi", () => {
     })
   })
 
-  describe("categories.get()", () => {
-    it("should return categories", done => {
+  describe("#categories.get()", () => {
+    it("should request 'GET /v1/categories.json'", done => {
       nockBack('categories.json', nockDone => {
         colormeApi.categories.get().then(({categories}) => {
           assert(categories[0].idBig == 988193);
