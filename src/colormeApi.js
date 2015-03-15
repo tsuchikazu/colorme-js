@@ -1,11 +1,23 @@
 "use strict";
-class ColormeApi {
-  constructor(name = "") {
-    this.name = name;
-  }
+import Resource from "./resource"
+import camelize from "camelize";
 
-  hello() {
-    return `hello, ${this.name}!`;
+class ColormeApi {
+  constructor({token}) {
+    Resource.baseUrl = 'https://api.shop-pro.jp';
+    Resource.token = token;
+    Resource.urlSuffix = '.json';
+    Resource.responseInterceptor = (response => {
+      return camelize(JSON.parse(response.data));
+    });
+
+    let resources = [
+      new Resource({name: 'shop', methods: [Resource.GET]}),
+      new Resource({name: 'products', methods: [Resource.GET]}),
+      new Resource({name: 'categories', methods: [Resource.GET]}),
+    ];
+    let v1 = new Resource({name: 'v1', methods:[], resources: resources});
+    Object.assign(this, v1);
   }
 }
 

@@ -16,15 +16,17 @@ describe("ColormeApi", () => {
 
   });
 
+
   describe("shop.get()", () => {
     it("should return shop", done => {
       nockBack('shop.json', nockDone => {
-        colormeApi.shop.get().then(shop => {
+        colormeApi.shop.get().then(({shop}) => {
           assert(shop.id == "PA01131974");
-          assert(shop.loginId == "tsuchikazu");
+          assert(shop.loginId == "grape0");
+        }).then(() => {
           nockDone();
           done();
-        })
+        }, done);
       })
     })
   })
@@ -36,11 +38,12 @@ describe("ColormeApi", () => {
           assert(products[0].id == 86927961);
           assert(products[0].name == "TEST");
 
-          assert(meta.total = 1842)
-          assert(meta.offset = 0)
+          assert(meta.total == 1842)
+          assert(meta.offset == 0)
+        }).then(() => {
           nockDone();
           done();
-        })
+        }, done);
       })
     })
   })
@@ -49,12 +52,13 @@ describe("ColormeApi", () => {
     it("should return product", done => {
       nockBack('product.json', nockDone => {
         var productId = 66768641;
-        colormeApi.products.get({id: productId}).then(product => {
-          asset(product.id == productId);
-          asset(product.name == "デスラビット刺繍　ボアネックウォーマー【通常版】");
+        colormeApi.products.get({id: productId}).then(({product}) => {
+          assert(product.id == productId);
+          assert(product.name == "デスラビット刺繍　ボアネックウォーマー【通常版】");
+        }).then(() => {
           nockDone();
           done();
-        })
+        }, done);
       })
     })
   })
@@ -62,13 +66,14 @@ describe("ColormeApi", () => {
   describe("categories.get()", () => {
     it("should return categories", done => {
       nockBack('categories.json', nockDone => {
-        colormeApi.categories.get().then(categories => {
-          assert(products[0].idBig == 988193);
-          assert(products[0].idSmall == 0);
-          assert(products[0].name == "レディースアパレル");
+        colormeApi.categories.get().then(({categories}) => {
+          assert(categories[0].idBig == 988193);
+          assert(categories[0].idSmall == 0);
+          assert(categories[0].name == "レディースアパレル");
+        }).then(() => {
           nockDone();
           done();
-        })
+        }, done);
       })
     })
   })
