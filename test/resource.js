@@ -10,6 +10,8 @@ describe('Resource', () => {
 
   beforeEach(() => {
     Resource.baseUrl = baseUrl;
+    Resource.responseInterceptor = null;
+    Resource.urlSuffix = null;
   })
 
   describe('#get, #put, #post, and #delete', () => {
@@ -22,7 +24,7 @@ describe('Resource', () => {
       }).get().then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send request to resource/id path', (done) => {
@@ -35,7 +37,7 @@ describe('Resource', () => {
       }).get({id: 1}).then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send request with authorization header', (done) => {
@@ -50,7 +52,7 @@ describe('Resource', () => {
       }).get().then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send request to url + urlSuffix', (done) => {
@@ -65,7 +67,7 @@ describe('Resource', () => {
       }).get().then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it("should send request to nested resource path", (done) => {
@@ -81,7 +83,7 @@ describe('Resource', () => {
       resource.nestedResource.get().then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it("should send request to nested nested resource path", (done) => {
@@ -100,7 +102,7 @@ describe('Resource', () => {
       resource.nestedResource.nestedNestedResource.get().then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
   })
 
@@ -115,7 +117,7 @@ describe('Resource', () => {
       }).get({param: "hoge"}).then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
   })
 
@@ -131,7 +133,7 @@ describe('Resource', () => {
       }).put(params).then((response) => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send put request to resource/id path with request body', (done) => {
@@ -145,7 +147,7 @@ describe('Resource', () => {
       }).put(Object.assign(params, {id: 1})).then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
   })
 
@@ -161,7 +163,7 @@ describe('Resource', () => {
       }).post(params).then((response) => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send post request to resource/id path with request body', (done) => {
@@ -175,7 +177,7 @@ describe('Resource', () => {
       }).post(Object.assign(params, {id: 1})).then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
   })
 
@@ -191,7 +193,7 @@ describe('Resource', () => {
       }).delete(params).then((response) => {
         request.done();
         done();
-      });
+      }, done);
     })
 
     it('should send delete request to resource/id path with request body', (done) => {
@@ -205,7 +207,7 @@ describe('Resource', () => {
       }).delete(Object.assign(params, {id: 1})).then(() => {
         request.done();
         done();
-      });
+      }, done);
     })
   })
 
