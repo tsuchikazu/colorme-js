@@ -1,9 +1,9 @@
 [
     {
-        "scope": "http://api.shop-pro.jp:80",
+        "scope": "https://api.shop-pro.jp",
         "method": "get",
         "path": "/v1/shop.json",
-        "body": "",
+        "body": {},
         "status": 200,
         "response": {
             "shop": {
