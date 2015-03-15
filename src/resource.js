@@ -11,6 +11,8 @@ class Resource {
   static get token() { return this._token; }
   static set urlSuffix(value) { this._urlSuffix = value; }
   static get urlSuffix() { return this._urlSuffix; }
+  static set responseInterceptor(value) { this._responseInterceptor = value; }
+  static get responseInterceptor() { return this._responseInterceptor; }
 
   constructor({name, methods, resources}) {
     this.name = name;
@@ -52,7 +54,13 @@ class Resource {
       if (Resource.token) {
         config.headers = { 'Authorization': `Bearer ${Resource.token}`}
       }
-      return axios(config)
+
+      return axios(config).then(response => {
+        if (Resource.responseInterceptor) {
+          response = Resource.responseInterceptor(response);
+        }
+        return response;
+      });
     }
   }
 
