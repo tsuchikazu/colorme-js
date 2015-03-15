@@ -123,6 +123,21 @@ describe("Colorme", () => {
     })
   })
 
+  describe("#products.put({id: id})", () => {
+    it("should request 'PUT /v1/products/#{id}.json'", done => {
+      nockBack('productPut.json', nockDone => {
+        var productId = 67981978;
+        colorme.products.put({id: productId, product: {name:"UpdatedName"}}).then(({product}) => {
+          assert(product != null);
+          assert(product.name == "UpdatedName");
+        }).then(() => {
+          nockDone();
+          done();
+        }, done);
+      })
+    })
+  })
+
   describe("#stocks.get()", () => {
     it("should request 'GET /v1/stocks.json'", done => {
       nockBack('stocks.json', nockDone => {

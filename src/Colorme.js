@@ -17,7 +17,7 @@ class Colorme {
         new Resource({name: 'stat', methods: [Resource.GET]})
       ]}),
       new Resource({name: 'customers', methods: [Resource.GET]}),
-      new Resource({name: 'products', methods: [Resource.GET]}),
+      new Resource({name: 'products', methods: [Resource.GET, Resource.PUT]}),
       new Resource({name: 'stocks', methods: [Resource.GET]}),
       new Resource({name: 'categories', methods: [Resource.GET]}),
       new Resource({name: 'payments', methods: [Resource.GET]}),

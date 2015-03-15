@@ -1,0 +1,57 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "put",
+        "path": "/v1/products/67981978.json",
+        "body": {
+            "product": {
+                "name": "UpdatedName"
+            }
+        },
+        "status": 200,
+        "response": {
+            "product": {
+                "id": 67981978,
+                "account_id": "PA01131974",
+                "model_number": "aaaa",
+                "name": "UpdatedName",
+                "category": {
+                    "id_big": 988193,
+                    "id_small": 0
+                },
+                "group_ids": [],
+                "display_state": "showing",
+                "sales_price": null,
+                "price": null,
+                "members_price": null,
+                "cost": null,
+                "cool_charge": null,
+                "delivery_charge": null,
+                "stock_managed": false,
+                "stocks": null,
+                "min_num": null,
+                "max_num": null,
+                "sale_start_date": null,
+                "sale_end_date": null,
+                "unit": null,
+                "weight": null,
+                "soldout_display": false,
+                "few_num": null,
+                "sort": null,
+                "simple_expl": null,
+                "expl": null,
+                "mobile_expl": null,
+                "smartphone_expl": null,
+                "make_date": 1386751771,
+                "update_date": 1390448338,
+                "memo": "",
+                "image_url": null,
+                "mobile_image_url": null,
+                "thumbnail_image_url": null,
+                "images": [],
+                "options": [],
+                "variants": []
+            }
+        }
+    }
+]
