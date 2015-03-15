@@ -1,8 +1,8 @@
 "use strict";
-import Resource from "./resource"
+import Resource from "./Resource"
 import camelize from "camelize";
 
-class ColormeApi {
+class Colorme {
   constructor({token}) {
     Resource.baseUrl = 'https://api.shop-pro.jp';
     Resource.token = token;
@@ -32,4 +32,4 @@ class ColormeApi {
   }
 }
 
-export default ColormeApi;
+export default Colorme;

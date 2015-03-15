@@ -3,7 +3,7 @@
 import assert from 'power-assert';
 import nock from 'nock';
 import axios from 'axios';
-import Resource from '../src/resource';
+import Resource from '../src/Resource';
 
 describe('Resource', () => {
   let baseUrl = 'http://example.com';

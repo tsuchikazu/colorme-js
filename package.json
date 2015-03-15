@@ -1,10 +1,10 @@
 {
-  "name": "colorme-api-js",
+  "name": "colorme",
   "description": "Colorme api client written in JavaScript for browser and node.js",
   "version": "0.0.1",
   "author": "tsuchikazu <huneyhunt77@gmail.com>",
   "bugs": {
-    "url": "https://github.com/tsuchikazu/colorme-api-js/issues"
+    "url": "https://github.com/tsuchikazu/colorme-js/issues"
   },
   "dependencies": {
     "axios": "^0.5.0",
@@ -28,13 +28,13 @@
     "README.md",
     "lib"
   ],
-  "homepage": "https://github.com/tsuchikazu/colorme-api-js/",
+  "homepage": "https://github.com/tsuchikazu/colorme-js/",
   "keywords": [],
   "licenses": "MIT",
-  "main": "lib/colormeApi.js",
+  "main": "lib/Colorme.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tsuchikazu/colorme-api-js.git"
+    "url": "https://github.com/tsuchikazu/colorme-js.git"
   },
   "scripts": {
     "build": "npm run build-to5 && npm run build-browser && npm run build-minify",
