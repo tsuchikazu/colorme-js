@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "get",
+        "path": "/v1/deliveries/date.json",
+        "body": {},
+        "status": 200,
+        "response": {
+            "delivery_date": {
+                "account_id": "PA01131974",
+                "days": {
+                    "enabled": true,
+                    "default": 1,
+                    "min": 0,
+                    "max": 365,
+                    "comment": null
+                },
+                "times": {
+                    "enabled": true,
+                    "periods": [
+                        "10&#12316;"
+                    ],
+                    "comment": null
+                },
+                "make_date": 1369279889,
+                "update_date": 1421981654
+            }
+        }
+    }
+]

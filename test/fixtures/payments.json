@@ -1,0 +1,58 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "get",
+        "path": "/v1/payments.json",
+        "body": {},
+        "status": 200,
+        "response": {
+            "payments": [
+                {
+                    "id": 428825,
+                    "account_id": "PA01131974",
+                    "name": "UFJ銀行",
+                    "fee": null,
+                    "ip_code": null,
+                    "make_date": 1360207071,
+                    "update_date": 1380102222,
+                    "order_end_note": null,
+                    "memo": "返品不可",
+                    "memo_mobile": null,
+                    "sort": 4,
+                    "image_url": null,
+                    "type": 1,
+                    "display": true,
+                    "use_mobile": false,
+                    "financial": {
+                        "name": "三菱東京UFJ銀行",
+                        "branch_number": null,
+                        "branch_name": "浜田山出張所",
+                        "kouza_type": 0,
+                        "kouza_number": "1111",
+                        "kouza_name": "コウザ"
+                    }
+                },
+                {
+                    "id": 483527,
+                    "account_id": "PA01131974",
+                    "name": "代引きです",
+                    "fee": null,
+                    "ip_code": null,
+                    "make_date": 1386749322,
+                    "update_date": 1393827682,
+                    "order_end_note": null,
+                    "memo": "あああああああああああああ\r\nいいいいいいいいいいいいいいいいいいいいいいい",
+                    "memo_mobile": null,
+                    "sort": null,
+                    "image_url": null,
+                    "type": 0,
+                    "display": true,
+                    "use_mobile": false,
+                    "cod": {
+                        "changeable": false
+                    }
+                }
+            ]
+        }
+    }
+]

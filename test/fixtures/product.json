@@ -1,81 +1,50 @@
 [
     {
-        "scope": "https://api.shop-pro.jp",
+        "scope": "https://api.shop-pro.jp:443",
         "method": "get",
-        "path": "/v1/products/66768641.json",
+        "path": "/v1/products/67981978.json",
         "body": {},
         "status": 200,
         "response": {
             "product": {
-                "id": 66768641,
+                "id": 67981978,
                 "account_id": "PA01131974",
-                "model_number": "deathrabbit_bneckwarmer",
-                "name": "デスラビット刺繍　ボアネックウォーマー【通常版】",
+                "model_number": "aaaa",
+                "name": "ああああああああ",
                 "category": {
-                    "id_big": 1654890,
+                    "id_big": 988193,
                     "id_small": 0
                 },
                 "group_ids": [],
-                "display_state": "sale_for_members",
-                "sales_price": 2685,
-                "price": 2685,
-                "members_price": 2685,
+                "display_state": "showing",
+                "sales_price": null,
+                "price": null,
+                "members_price": null,
                 "cost": null,
                 "cool_charge": null,
                 "delivery_charge": null,
-                "stock_managed": true,
-                "stocks": 10,
+                "stock_managed": false,
+                "stocks": null,
                 "min_num": null,
-                "max_num": 1,
-                "sale_start_date": 1384182000,
-                "sale_end_date": 1385650800,
-                "unit": "",
+                "max_num": null,
+                "sale_start_date": null,
+                "sale_end_date": null,
+                "unit": null,
                 "weight": null,
                 "soldout_display": false,
                 "few_num": null,
                 "sort": null,
-                "simple_expl": "期間限定!少量限定販売!!",
-                "expl": "■購入期限：2013/11/28 24:00<br/>■素材：ポリエステル100%<br/>■タイプ：灰×紫刺繍<br/>■制作：(株)REGULUS.69<br/>■価格：2,900<br/>■送料：全国一律525<br/>■配送予定日：2013年12月上旬<br/>■支払い：カード決済/コンビニ決済/代引き<br/>  新作ネックウォーマー！！<br/>今年のモデルはもこもこで暖かいボア素材のネックウォーマー。<br/>フロントに可愛いデスラビットを刺繍。<br/>こちらの灰×紫刺繍のデスラビットは秋田書店オンラインストアとレグルス2店舗限定販売！<br/>弾力があって暖かい、柔らかな肌触りが特徴のボア素材です。<br/>首に装着すると冷気をしっかりガードしてくれるのでとっても暖かい！<br/>さらにアレンジとして頭に装着するのもお洒落です！！！<br/>ネックウォーマーは、かさばらないので鞄などにも収納しやく使い勝手の良いアイテムです！！<br/><br/>他にも黒×ピンク刺繍のデスラビットの秋田書店オンラインストアVer.もあります！<br/>・黒×ピンク刺繍Ver.の<a href=\"http://store.akitashoten.co.jp/cart/deathrabbit_bneckwarmer_akita/top\" border=0><span style='color:#0000ff;'>購入はコチラ</span></a>から！<br/><br/>＜注意事項＞<br/>・体質によってはかゆみ、発疹等を引き起こす場合があります。異常を感じたらすぐにご使用をお止め下さい。<br/>・多少色落ちすることがあり、他の物に色が移行する場合があります。<br/>・火気の近くでのご使用はお避け下さい。<br/>   2013年12月上旬",
-                "mobile_expl": "",
-                "smartphone_expl": "",
-                "make_date": 1384509864,
-                "update_date": 1396941005,
+                "simple_expl": null,
+                "expl": null,
+                "mobile_expl": null,
+                "smartphone_expl": null,
+                "make_date": 1386751771,
+                "update_date": 1390448338,
                 "memo": "",
-                "image_url": "http://img06.shop-pro.jp/PA01131/974/product/66768641.jpg",
-                "mobile_image_url": "http://img06.shop-pro.jp/PA01131/974/product/66768641_mb.jpg",
-                "thumbnail_image_url": "http://img06.shop-pro.jp/PA01131/974/product/66768641_th.jpg",
-                "images": [
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o1.jpg",
-                        "position": 1,
-                        "mobile": false
-                    },
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o1_mb.jpg",
-                        "position": 1,
-                        "mobile": true
-                    },
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o2.jpg",
-                        "position": 2,
-                        "mobile": false
-                    },
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o2_mb.jpg",
-                        "position": 2,
-                        "mobile": true
-                    },
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o3.jpg",
-                        "position": 3,
-                        "mobile": false
-                    },
-                    {
-                        "src": "http://img06.shop-pro.jp/PA01131/974/product/66768641_o3_mb.jpg",
-                        "position": 3,
-                        "mobile": true
-                    }
-                ],
+                "image_url": null,
+                "mobile_image_url": null,
+                "thumbnail_image_url": null,
+                "images": [],
                 "options": [],
                 "variants": []
             }

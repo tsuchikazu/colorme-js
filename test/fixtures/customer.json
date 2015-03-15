@@ -1,0 +1,31 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "get",
+        "path": "/v1/customers/35934095.json",
+        "body": {},
+        "status": 200,
+        "response": {
+            "customer": {
+                "id": 35934095,
+                "account_id": "PA01131974",
+                "name": "品川太郎",
+                "furigana": "",
+                "hojin": "",
+                "busho": "",
+                "sex": null,
+                "postal": "1420054",
+                "pref_id": 13,
+                "pref_name": "東京都",
+                "address1": "品川区",
+                "address2": "",
+                "mail": "test@gmail.com",
+                "tel": "",
+                "fax": "",
+                "tel_mobile": "",
+                "points": 0,
+                "member": false
+            }
+        }
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "get",
+        "path": "/v1/sales/stat.json",
+        "body": {},
+        "status": 200,
+        "response": {
+            "sales_stat": {
+                "account_id": "PA01131974",
+                "date": 1426423201,
+                "amount_today": 0,
+                "count_today": 0,
+                "amount_this_month": 18148,
+                "count_this_month": 2
+            }
+        }
+    }
+]

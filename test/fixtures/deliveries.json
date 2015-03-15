@@ -1,0 +1,840 @@
+[
+    {
+        "scope": "https://api.shop-pro.jp:443",
+        "method": "get",
+        "path": "/v1/deliveries.json",
+        "body": {},
+        "status": 200,
+        "response": {
+            "deliveries": [
+                {
+                    "id": 226105,
+                    "account_id": "PA01131974",
+                    "name": "佐川急便 一律600円",
+                    "image_url": null,
+                    "charge_free_type": "free",
+                    "charge_free_limit": 20000,
+                    "tax_included": true,
+                    "charge_type": "fixed",
+                    "slip_number_use": true,
+                    "slip_number_url": "http://yahoo.co.jp",
+                    "memo": null,
+                    "memo2": null,
+                    "sort": null,
+                    "display_state": "showing",
+                    "preferred_date_use": true,
+                    "preferred_period_use": true,
+                    "make_date": 1317014420,
+                    "update_date": 1423825002,
+                    "charge": {
+                        "delivery_id": 226105,
+                        "account_id": "PA01131974",
+                        "charge_fixed": 600,
+                        "charge_ranges_by_price": [
+                            [
+                                20000,
+                                600
+                            ]
+                        ],
+                        "charge_max_price": 0,
+                        "charge_ranges_by_area": [],
+                        "charge_ranges_by_weight": [
+                            [
+                                1000,
+                                [
+                                    {
+                                        "pref_id": 1,
+                                        "pref_name": "北海道",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 2,
+                                        "pref_name": "青森県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 3,
+                                        "pref_name": "岩手県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 4,
+                                        "pref_name": "秋田県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 5,
+                                        "pref_name": "宮城県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 6,
+                                        "pref_name": "山形県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 7,
+                                        "pref_name": "福島県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 8,
+                                        "pref_name": "茨城県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 9,
+                                        "pref_name": "栃木県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 10,
+                                        "pref_name": "群馬県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 11,
+                                        "pref_name": "埼玉県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 12,
+                                        "pref_name": "千葉県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 13,
+                                        "pref_name": "東京都",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 14,
+                                        "pref_name": "神奈川県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 15,
+                                        "pref_name": "新潟県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 16,
+                                        "pref_name": "福井県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 17,
+                                        "pref_name": "石川県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 18,
+                                        "pref_name": "富山県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 19,
+                                        "pref_name": "静岡県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 20,
+                                        "pref_name": "山梨県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 21,
+                                        "pref_name": "長野県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 22,
+                                        "pref_name": "愛知県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 23,
+                                        "pref_name": "岐阜県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 24,
+                                        "pref_name": "三重県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 25,
+                                        "pref_name": "和歌山県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 26,
+                                        "pref_name": "滋賀県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 27,
+                                        "pref_name": "奈良県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 28,
+                                        "pref_name": "京都府",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 29,
+                                        "pref_name": "大阪府",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 30,
+                                        "pref_name": "兵庫県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 31,
+                                        "pref_name": "岡山県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 32,
+                                        "pref_name": "広島県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 33,
+                                        "pref_name": "鳥取県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 34,
+                                        "pref_name": "島根県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 35,
+                                        "pref_name": "山口県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 36,
+                                        "pref_name": "香川県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 37,
+                                        "pref_name": "徳島県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 38,
+                                        "pref_name": "愛媛県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 39,
+                                        "pref_name": "高知県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 40,
+                                        "pref_name": "福岡県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 41,
+                                        "pref_name": "佐賀県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 42,
+                                        "pref_name": "長崎県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 43,
+                                        "pref_name": "大分県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 44,
+                                        "pref_name": "熊本県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 45,
+                                        "pref_name": "宮崎県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 46,
+                                        "pref_name": "鹿児島県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 47,
+                                        "pref_name": "沖縄県",
+                                        "charge": 10
+                                    },
+                                    {
+                                        "pref_id": 48,
+                                        "pref_name": "海外",
+                                        "charge": 10
+                                    }
+                                ]
+                            ],
+                            [
+                                2000,
+                                [
+                                    {
+                                        "pref_id": 1,
+                                        "pref_name": "北海道",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 2,
+                                        "pref_name": "青森県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 3,
+                                        "pref_name": "岩手県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 4,
+                                        "pref_name": "秋田県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 5,
+                                        "pref_name": "宮城県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 6,
+                                        "pref_name": "山形県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 7,
+                                        "pref_name": "福島県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 8,
+                                        "pref_name": "茨城県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 9,
+                                        "pref_name": "栃木県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 10,
+                                        "pref_name": "群馬県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 11,
+                                        "pref_name": "埼玉県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 12,
+                                        "pref_name": "千葉県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 13,
+                                        "pref_name": "東京都",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 14,
+                                        "pref_name": "神奈川県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 15,
+                                        "pref_name": "新潟県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 16,
+                                        "pref_name": "福井県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 17,
+                                        "pref_name": "石川県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 18,
+                                        "pref_name": "富山県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 19,
+                                        "pref_name": "静岡県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 20,
+                                        "pref_name": "山梨県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 21,
+                                        "pref_name": "長野県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 22,
+                                        "pref_name": "愛知県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 23,
+                                        "pref_name": "岐阜県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 24,
+                                        "pref_name": "三重県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 25,
+                                        "pref_name": "和歌山県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 26,
+                                        "pref_name": "滋賀県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 27,
+                                        "pref_name": "奈良県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 28,
+                                        "pref_name": "京都府",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 29,
+                                        "pref_name": "大阪府",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 30,
+                                        "pref_name": "兵庫県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 31,
+                                        "pref_name": "岡山県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 32,
+                                        "pref_name": "広島県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 33,
+                                        "pref_name": "鳥取県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 34,
+                                        "pref_name": "島根県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 35,
+                                        "pref_name": "山口県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 36,
+                                        "pref_name": "香川県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 37,
+                                        "pref_name": "徳島県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 38,
+                                        "pref_name": "愛媛県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 39,
+                                        "pref_name": "高知県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 40,
+                                        "pref_name": "福岡県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 41,
+                                        "pref_name": "佐賀県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 42,
+                                        "pref_name": "長崎県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 43,
+                                        "pref_name": "大分県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 44,
+                                        "pref_name": "熊本県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 45,
+                                        "pref_name": "宮崎県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 46,
+                                        "pref_name": "鹿児島県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 47,
+                                        "pref_name": "沖縄県",
+                                        "charge": 300
+                                    },
+                                    {
+                                        "pref_id": 48,
+                                        "pref_name": "海外",
+                                        "charge": 300
+                                    }
+                                ]
+                            ]
+                        ],
+                        "charge_ranges_max_weight": []
+                    }
+                },
+                {
+                    "id": 277037,
+                    "account_id": "PA01131974",
+                    "name": "ヤマト運輸",
+                    "image_url": null,
+                    "charge_free_type": "not_free",
+                    "charge_free_limit": 10000,
+                    "tax_included": true,
+                    "charge_type": "by_area",
+                    "slip_number_use": false,
+                    "slip_number_url": null,
+                    "memo": null,
+                    "memo2": null,
+                    "sort": null,
+                    "display_state": "showing",
+                    "preferred_date_use": true,
+                    "preferred_period_use": true,
+                    "make_date": 1353921169,
+                    "update_date": 1405666310,
+                    "charge": {
+                        "delivery_id": 277037,
+                        "account_id": "PA01131974",
+                        "charge_fixed": null,
+                        "charge_ranges_by_price": [],
+                        "charge_max_price": null,
+                        "charge_ranges_by_area": [
+                            {
+                                "pref_id": 1,
+                                "pref_name": "北海道",
+                                "charge": 100
+                            },
+                            {
+                                "pref_id": 2,
+                                "pref_name": "青森県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 3,
+                                "pref_name": "岩手県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 4,
+                                "pref_name": "秋田県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 5,
+                                "pref_name": "宮城県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 6,
+                                "pref_name": "山形県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 7,
+                                "pref_name": "福島県",
+                                "charge": 200
+                            },
+                            {
+                                "pref_id": 8,
+                                "pref_name": "茨城県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 9,
+                                "pref_name": "栃木県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 10,
+                                "pref_name": "群馬県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 11,
+                                "pref_name": "埼玉県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 12,
+                                "pref_name": "千葉県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 13,
+                                "pref_name": "東京都",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 14,
+                                "pref_name": "神奈川県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 15,
+                                "pref_name": "新潟県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 16,
+                                "pref_name": "福井県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 17,
+                                "pref_name": "石川県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 18,
+                                "pref_name": "富山県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 19,
+                                "pref_name": "静岡県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 20,
+                                "pref_name": "山梨県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 21,
+                                "pref_name": "長野県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 22,
+                                "pref_name": "愛知県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 23,
+                                "pref_name": "岐阜県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 24,
+                                "pref_name": "三重県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 25,
+                                "pref_name": "和歌山県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 26,
+                                "pref_name": "滋賀県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 27,
+                                "pref_name": "奈良県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 28,
+                                "pref_name": "京都府",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 29,
+                                "pref_name": "大阪府",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 30,
+                                "pref_name": "兵庫県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 31,
+                                "pref_name": "岡山県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 32,
+                                "pref_name": "広島県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 33,
+                                "pref_name": "鳥取県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 34,
+                                "pref_name": "島根県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 35,
+                                "pref_name": "山口県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 36,
+                                "pref_name": "香川県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 37,
+                                "pref_name": "徳島県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 38,
+                                "pref_name": "愛媛県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 39,
+                                "pref_name": "高知県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 40,
+                                "pref_name": "福岡県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 41,
+                                "pref_name": "佐賀県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 42,
+                                "pref_name": "長崎県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 43,
+                                "pref_name": "大分県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 44,
+                                "pref_name": "熊本県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 45,
+                                "pref_name": "宮崎県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 46,
+                                "pref_name": "鹿児島県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 47,
+                                "pref_name": "沖縄県",
+                                "charge": 2000
+                            },
+                            {
+                                "pref_id": 48,
+                                "pref_name": "海外",
+                                "charge": 2000
+                            }
+                        ],
+                        "charge_ranges_by_weight": [],
+                        "charge_ranges_max_weight": []
+                    }
+                },
+                {
+                    "id": 351110,
+                    "account_id": "PA01131974",
+                    "name": "aaaa",
+                    "image_url": null,
+                    "charge_free_type": "not_free",
+                    "charge_free_limit": null,
+                    "tax_included": false,
+                    "charge_type": "by_weight",
+                    "slip_number_use": false,
+                    "slip_number_url": "",
+                    "memo": "",
+                    "memo2": "",
+                    "sort": null,
+                    "display_state": "showing",
+                    "preferred_date_use": true,
+                    "preferred_period_use": true,
+                    "make_date": 1419403296,
+                    "update_date": 1419403296,
+                    "charge": {
+                        "delivery_id": 351110,
+                        "account_id": "PA01131974",
+                        "charge_fixed": null,
+                        "charge_ranges_by_price": [],
+                        "charge_max_price": null,
+                        "charge_ranges_by_area": [],
+                        "charge_ranges_by_weight": [],
+                        "charge_ranges_max_weight": []
+                    }
+                }
+            ]
+        }
+    }
+]
