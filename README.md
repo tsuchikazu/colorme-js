@@ -22,13 +22,13 @@ var colorme = new Colorme({token: 'colorme-api-token'});
 colorme.products.get().then(function(data) {
   console.log(data.products);
   console.log(data.meta);
-}
+});
 colorme.products.get({id: 1}).then(function(data) {
   console.log(data.product);
-}
+});
 colorme.products.put({id: 1, product:{name: "UpdatedName"}}).then(function(data) {
   console.log(data.product);
-}
+});
 ```
 
 ## Contributing
