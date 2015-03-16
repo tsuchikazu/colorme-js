@@ -1,35 +1,40 @@
-# es6-project-boilderplate
-[![Build Status](http://img.shields.io/travis/mohayonao/es6-project-boilerplate.svg?style=flat-square)](https://travis-ci.org/mohayonao/es6-project-boilerplate)
-[![NPM Version](http://img.shields.io/npm/v/es6-project-boilerplate.svg?style=flat-square)](https://www.npmjs.org/package/es6-project-boilerplate)
-[![Bower](http://img.shields.io/bower/v/es6-project-boilerplate.svg?style=flat-square)](http://bower.io/search/?q=es6-project-boilerplate)
-[![Dependency Status](http://img.shields.io/david/mohayonao/mml-emitter.svg?style=flat-square)](https://david-dm.org/mohayonao/es6-project-boilerplate)
-[![devDependency Status](http://img.shields.io/david/dev/mohayonao/es6-project-boilerplate.svg?style=flat-square)](https://david-dm.org/mohayonao/es6-project-boilerplate#info=devDependencies)
-[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://mohayonao.mit-license.org/)
+# colome-js
+[ColorMeShop API](http://shop-pro.jp/?mode=api) client written in JavaScript for browser and node.js
 
-> ぼくのかんがえたさいきょうのES6プロジェクトテンプレート
+## Install
+Using bower:
 
-## build
-- `npm run build`
-  - `build-to5` && `build-browser` && `build-minify`
-- `npm run build-to5`
-  - translate ES6 code into ES5 code && store `lib` directory
-  - `lib` directory is .gitignored, but contains in npm files
-- `npm run build-browser`
-  - build for browser && store `build` directory
-- `npm run build-minify`
-  - compress a code built on `build-browser`
+```sh
+$ bower install colorme
+```
 
-## test
-- `npm run test`
-  - test with power-assert
+Using npm:
 
-## coverage
-- `npm run cover`
-  - generate code coverage reports
+```sh
+$ npm install colorme
+```
 
-## lint
-- `npm run lint`
+## Usage
+```javascript
+var Colorme = require('colorme');
 
-## travis
-- `npm run travis`
-  - `lint` && `test`
+var colorme = new Colorme({token: 'colorme-api-token'});
+colorme.products.get().then(function(data) {
+  console.log(data.products);
+  console.log(data.meta);
+}
+colorme.products.get({id: 1}).then(function(data) {
+  console.log(data.product);
+}
+colorme.products.put({id: 1, product:{name: "UpdatedName"}}).then(function(data) {
+  console.log(data.product);
+}
+```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
