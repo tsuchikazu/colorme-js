@@ -1,6 +1,7 @@
 "use strict";
 import Resource from "./Resource"
 import camelize from "camelize";
+import assign from "object.assign";
 
 class Colorme {
   constructor({token}) {
@@ -28,7 +29,7 @@ class Colorme {
     ];
     let v1 = new Resource({name: 'v1', methods:[], resources: resources});
 
-    Object.assign(this, v1);
+    assign(this, v1);
   }
 }
 

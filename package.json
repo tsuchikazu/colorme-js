@@ -1,14 +1,15 @@
 {
   "name": "colorme",
   "description": "Colorme api client written in JavaScript for browser and node.js",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "tsuchikazu <huneyhunt77@gmail.com>",
   "bugs": {
     "url": "https://github.com/tsuchikazu/colorme-js/issues"
   },
   "dependencies": {
     "axios": "^0.5.0",
-    "camelize": "^1.0.0"
+    "camelize": "^1.0.0",
+    "object.assign": "^1.1.1"
   },
   "devDependencies": {
     "babel": "^4.3.0",
