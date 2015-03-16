@@ -2,14 +2,6 @@
 [ColorMeShop API](http://shop-pro.jp/?mode=api) client written in JavaScript for browser and node.js
 
 ## Install
-Using bower:
-
-```sh
-$ bower install colorme
-```
-
-Using npm:
-
 ```sh
 $ npm install colorme
 ```
