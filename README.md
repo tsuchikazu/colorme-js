@@ -22,6 +22,7 @@ colorme.products.put({id: 1, product:{name: "UpdatedName"}}).then(function(data)
   console.log(data.product);
 });
 ```
+See [Colorme Unit Test](https://github.com/tsuchikazu/colorme-js/blob/master/test/Colorme.js) for other apis.
 
 ## Contributing
 
