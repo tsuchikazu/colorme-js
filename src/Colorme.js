@@ -9,7 +9,7 @@ class Colorme {
     Resource.token = token;
     Resource.urlSuffix = '.json';
     Resource.responseInterceptor = (response => {
-      return camelize(JSON.parse(response.data));
+      return camelize(response.data);
     });
 
     let resources = [

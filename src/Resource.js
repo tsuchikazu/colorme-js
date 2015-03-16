@@ -30,27 +30,20 @@ class Resource {
   buildMethod(method) {
     return (params) => {
       params = params || {}
-      let parentResourceNames = this.parentNames().reverse();
-      let url = [Resource.baseUrl].concat(parentResourceNames).concat(this.name).join('/');
-      if (params.id) {
-        url += `/${params.id}`;
-        delete params.id;
-      }
-      url += Resource.urlSuffix ? Resource.urlSuffix : "";
-      let data = {}
-      if (method != Resource.GET) {
-        data = params
-        params = {}
-      }
+
       let config = {
-        url: url,
         method: method,
-        params: params,
-        data: data,
-        transformResponse: [data => {
-          return data;
-        }]
+        url: this.buildUrl(params)
+      };
+
+      if (method == Resource.GET) {
+        config.params = params;
+        config.data = {};
+      } else {
+        config.data = params;
+        config.params = {};
       }
+
       if (Resource.token) {
         config.headers = { 'Authorization': `Bearer ${Resource.token}`}
       }
@@ -62,6 +55,17 @@ class Resource {
         return response;
       });
     }
+  }
+
+  buildUrl(params) {
+    let parentResourceNames = this.parentNames().reverse();
+    let url = [Resource.baseUrl].concat(parentResourceNames).concat(this.name).join('/');
+    if (params.id) {
+      url += `/${params.id}`;
+      delete params.id;
+    }
+    url += Resource.urlSuffix ? Resource.urlSuffix : "";
+    return url;
   }
 
   parentNames(names = []) {
