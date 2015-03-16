@@ -20,10 +20,9 @@ describe("Colorme", () => {
       nockBack('shop.json', nockDone => {
         colorme.shop.get().then(({shop}) => {
           assert(shop != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -33,10 +32,9 @@ describe("Colorme", () => {
       nockBack('salesStat.json', nockDone => {
         colorme.sales.stat.get().then(({salesStat}) => {
           assert(salesStat != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -47,10 +45,9 @@ describe("Colorme", () => {
         colorme.sales.get().then(({sales, meta}) => {
           assert(sales != null);
           assert(meta != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -60,10 +57,9 @@ describe("Colorme", () => {
       nockBack('sale.json', nockDone => {
         colorme.sales.get({id: 52367020}).then(({sale}) => {
           assert(sale != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -74,10 +70,9 @@ describe("Colorme", () => {
         colorme.customers.get().then(({customers, meta}) => {
           assert(customers != null);
           assert(meta != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -87,10 +82,9 @@ describe("Colorme", () => {
       nockBack('customer.json', nockDone => {
         colorme.customers.get({id: 35934095}).then(({customer}) => {
           assert(customer != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -101,10 +95,9 @@ describe("Colorme", () => {
         colorme.products.get().then(({products, meta}) => {
           assert(products != null);
           assert(meta != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -115,10 +108,9 @@ describe("Colorme", () => {
         var productId = 67981978;
         colorme.products.get({id: productId}).then(({product}) => {
           assert(product != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -130,10 +122,9 @@ describe("Colorme", () => {
         colorme.products.put({id: productId, product: {name:"UpdatedName"}}).then(({product}) => {
           assert(product != null);
           assert(product.name == "UpdatedName");
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -143,10 +134,9 @@ describe("Colorme", () => {
       nockBack('stocks.json', nockDone => {
         colorme.stocks.get().then(({stocks}) => {
           assert(stocks != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -156,10 +146,9 @@ describe("Colorme", () => {
       nockBack('categories.json', nockDone => {
         colorme.categories.get().then(({categories}) => {
           assert(categories != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -169,10 +158,9 @@ describe("Colorme", () => {
       nockBack('payments.json', nockDone => {
         colorme.payments.get().then(({payments}) => {
           assert(payments != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -182,10 +170,9 @@ describe("Colorme", () => {
       nockBack('deliveries.json', nockDone => {
         colorme.deliveries.get().then(({deliveries}) => {
           assert(deliveries != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -195,10 +182,9 @@ describe("Colorme", () => {
       nockBack('deliveriesDate.json', nockDone => {
         colorme.deliveries.date.get().then(({deliveryDate}) => {
           assert(deliveryDate != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
@@ -208,10 +194,9 @@ describe("Colorme", () => {
       nockBack('gifts.json', nockDone => {
         colorme.gifts.get().then(({gifts}) => {
           assert(categories != null);
-        }).then(() => {
           nockDone();
           done();
-        }, done);
+        }).catch(done);
       })
     })
   })
